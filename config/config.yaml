@@ -1,0 +1,41 @@
+# Global task param. Do not modify.
+task_to_flag: {'PE': 0, 'MP': 1, 'FPE': 2, 'MC': 3, '2DAR': 4, 'AR': 5, 'MIB': 6, 
+               'MeshRecover': 7,'FutureMeshRecover': 8,'MeshPred': 9,'MeshCompletion': 10,'MeshInBetween': 11}
+dataset_to_flag: {'H36M_3D': 0, 'AMASS': 1, 'PW3D_MESH': 2, 'H36M_MESH': 3, 'H36M_MESH_TCMR': 4, 'COCO': 5, 'FREEMAN': 6}
+
+flag_to_task: {'0': 'PE', '1': 'MP', '2': 'FPE', '3': 'MC', '4': '2DAR', '5': 'AR', '6': 'MIB',
+               '7':'MeshRecover', '8':'FutureMeshRecover', '9':'MeshPred', '10':'MeshCompletion', '11':'MeshInBetween' }
+flag_to_dataset: {'0': 'H36M_3D', '1': 'AMASS', '2': 'PW3D_MESH', '3': 'H36M_MESH', '4': 'H36M_MESH_TCMR', '5': 'COCO', '6': 'FREEMAN'}
+
+num_prompt: 800
+num_pose_joint: 17
+num_mesh_joint: 24
+joint_mask_ratio: 0.4
+frame_mask_ratio: 0.4
+mesh_joint_mask_ratio: 0.4
+
+model_config:
+    n_frames: 16
+    num_joints: 24
+    n_layers: 8
+    dim_in: 3 
+    dim_feat: 128 
+    dim_rep: 512 
+    dim_out: 3 
+    mlp_ratio: 4 
+    act_layer: gelu
+    attn_drop: 0.0 
+    drop: 0.0 
+    drop_path: 0.0 
+    use_layer_scale: true 
+    layer_scale_init_value: 1e-05 
+    use_adaptive_fusion: true 
+    num_heads: 8 
+    qkv_bias: false 
+    qkv_scale: null 
+    hierarchical: false 
+    use_temporal_similarity: true 
+    temporal_connection_len: 1 
+    use_tcn: false 
+    graph_only: false 
+    neighbour_num: 2 
