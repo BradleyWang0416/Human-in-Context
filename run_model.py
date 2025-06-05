@@ -36,10 +36,10 @@ def run_inference(task: str) -> Tuple[Dict[str, str], np.ndarray]:
 
     query_task = task
     query_dataset = 'H36M_MESH'
-    query_joint3d = np.load(f"data/H36M_MESH_test02947/npy/query_pose3d.npy")
-    query_joint2d = np.load(f"data/H36M_MESH_test02947/npy/query_pose2d.npy")
-    query_smpl_pose = np.load(f"data/H36M_MESH_test02947/npy/query_smpl_pose.npy")
-    query_smpl_shape = np.load(f"data/H36M_MESH_test02947/npy/query_smpl_shape.npy")
+    query_joint3d = np.load(f"data/npy/query_pose3d.npy")
+    query_joint2d = np.load(f"data/npy/query_pose2d.npy")
+    query_smpl_pose = np.load(f"data/npy/query_smpl_pose.npy")
+    query_smpl_shape = np.load(f"data/npy/query_smpl_shape.npy")
     query_data_dict ={
         'H36M_MESH': {
             'joint3d': torch.from_numpy(query_joint3d).float().unsqueeze(0), # [1,32,17,3]

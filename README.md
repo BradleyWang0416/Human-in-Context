@@ -22,11 +22,14 @@ Download all 3 files [here](https://drive.google.com/drive/folders/1UzFbrMtzAmvJ
 │   └── hic_pretrained_ep69.bin
 │
 └── data/
+    |
     └── support_data/
+        |
         ├── anchor_collection/
         |   └── anchor_collection.pkl
+        |
         └── mesh/
             └── SMPL_NEUTRAL.pkl
 ```
 
-## 4. Run the demo
+## 3. Run the demo

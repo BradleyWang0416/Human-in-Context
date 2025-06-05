@@ -1,5 +1,5 @@
+import os
 import numpy as np
-import torch
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.animation as animation
@@ -41,7 +41,10 @@ def viz_motion(data, save=True):
     if not save:
         plt.show()
     else:
-        gif_path = f"media/output/query_output.gif"
+        gif_folder = "media/output"
+        if not os.path.exists(gif_folder):
+            os.makedirs(gif_folder)
+        gif_path = os.path.join(gif_folder, "query_output.gif")
         line_anim.save(gif_path, writer='pillow')
         plt.close()
         return gif_path

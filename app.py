@@ -7,7 +7,6 @@ import torch
 import joblib
 from typing import Tuple, Dict
 
-from lib.utils.viz_motion import viz_motion
 from run_model import run_inference
 
 TASK_MAP = {
