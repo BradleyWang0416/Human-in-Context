@@ -22,7 +22,7 @@ def run_inference(task: str) -> Tuple[Dict[str, str], np.ndarray]:
     MODEL = XFusionNet(**model_config)
     if torch.cuda.is_available():
         MODEL = MODEL.cuda()
-    ckpt_pth = "ckpt/nominee_069.bin"
+    ckpt_pth = "ckpt/hic_pretrained_ep69.bin"
     checkpoint = torch.load(ckpt_pth, weights_only=True)
     MODEL.load_state_dict({k.replace('module.', ''): v for k, v in checkpoint['model_pos'].items()}, strict=True)
     MODEL.eval()
