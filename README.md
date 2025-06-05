@@ -46,4 +46,4 @@ Step 2 (Optional). Push the button to visualize query input.
 
 Step 3. Select a task from the dropdown menu. The menu will pop up once you select a query input. Available tasks depend on the selected input.
 
-Step 4. Push the ''Run Inference'' to start the inference on the selected input and task.
+Step 4. Push the ''Run Inference'' button to start the inference on the selected input and task.
