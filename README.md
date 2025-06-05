@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Human-in-Context: Unified Cross-Domain 3D Human Motion Modeling via In-Context Learning</h1>
 
-# 😃Run
+# Installation and Preparation
 
 ## 1. Installation
 ```
@@ -32,4 +32,18 @@ Download all 3 files [here](https://drive.google.com/drive/folders/1UzFbrMtzAmvJ
             └── SMPL_NEUTRAL.pkl
 ```
 
-## 3. Run the demo
+# Run Demo
+
+```
+python app.py
+```
+
+## Demo Instruction
+
+Step 1. Select a query input (2d pose / 3D pose / mesh) from the dropdown menu.
+
+Step 2 (Optional). Push the button to visualize query input.
+
+Step 3. Select a task from the dropdown menu. The menu will pop up once you select a query input. Available tasks depend on the selected input.
+
+Step 4. Push the ''Run Inference'' to start the inference on the selected input and task.
