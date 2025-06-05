@@ -13,15 +13,7 @@ pip install -r requirements.txt
 ## 2. Download checkpoint and support data
 
 
-Download all 3 files [here](https://drive.google.com/drive/folders/1UzFbrMtzAmvJKvuDi63yz72iSdQqGjvq?usp=drive_link), and:
-
-### 1) Put ''hic_pretrained_ep69.bin'' in ./ckpt/
-
-### 2) Put ''anchor_collection.pkl'' in ./data/support_data/anchor_collection/
-
-### 2) Put ''SMPL_NEUTRAL.pkl'' in ./data/support_data/mesh/
-
-After you do so, the root directory should look like this:
+Download all 3 files [here](https://drive.google.com/drive/folders/1UzFbrMtzAmvJKvuDi63yz72iSdQqGjvq?usp=drive_link), and put them such that the root directory looks like this:
 
 ```
 ./
